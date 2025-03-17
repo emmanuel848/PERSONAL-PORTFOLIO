@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio</title>
+        <link rel="stylesheet"href="styles.css"><!--link to styles.css-->
+    </head>
+    <body>
+         
+        <!--the navigation bar-->
+        <header>
+            <nav>
+                <button id="menuToggle" aria-label="Toggle Menu"></button>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Home Section-->
+        <section id="home">
+            <h1>Hi,I'm Emmanuel Kiptum.</h1>
+            <p>I am a software engineering student at JKUAT.I am passionate about coding and experienced in HTML,javascript and styling using css</p>
+            <img src="images/profile.jpg" alt="My Photo">
+        </section>
+
+        <!--About Me Section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I was born on 24th,December,2006.I started my early education in Our lady of Assumption Academy(O.L.A.A)where i finished my primary education in the year 2021.I was able to secure myself a spot in St.Anthony's Boys Highschool Kitale where I joined on 5th August 2021.At my highschool level is where i was inspired to do programming.I used to see members of the robotics club programme the robots.I really wanted to join the club but I was unable since I knew nothing on programming.Immediately I finished my highschool,JKUAT had a program to inspire youth in STEM.I enrolled myself and was able to learn a lot on programming.I would advice other young people to shoot their shot on programming.With programming we can solve a lot of current problems in our country or even worldwide.   </p>
+        </section>
+
+        <!--Projects Section-->
+        <section id="Projects">
+            <h2>Projects</h2>
+            <p>I have worked on some projects.</p>
+
+            <div class="project">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1"width="300px">
+                <p>Although i am still working on this,this is a restaurant website page.</p>
+                <button onclick="showDetails(1)">More Details</button>
+                <div id="details1" class="hidden">
+        </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 2</h3>
+                <img src="images/project2.png" alt="Project 2"width="300px">
+                <p>scent mood tracker</p>
+                <button onclick="showDetails(2)">More Details</button>
+                <div id="details2" class="hidden">Detailed information about Project 2.</div>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">email:</label>
+                <input type="email" id="email"required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section id="mini-game">
+            <h2>Mini-Game:Guess My Secret Number</h2>
+            <p>Can you guess my secret number(between 1 and 10)?You have 3 tries!</p>
+
+            <label for="userGuess">Enter your guess:</label>
+            <input type="number" id="userGuess" min="1" max="10" placeholder="Enter a number" title="Guess a number between 1 and 10">
+            <button onclick="checkGuess()">Submit Guess</button>
+
+            <p id="gameMessage"></p>
+        
+        </section>
+
+
+        <!--Footer-->
+        <footer>
+        <p>&copy;2025 Emmanuel Kiptoo Kiptum</p>
+        <p>Follow Me on:
+            <a href="https://github.com/emmanuel848">GitHub</a>
+            <a href="https://instagram.com/Yfw_manuu">Instagram</a>
+        </p>
+    </footer>
+    <script src="script.js"></script><!--link to script.js-->
+    </body>
+</html>

@@ -1,0 +1,197 @@
+/*import google fronts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif,smooth;
+}
+
+body{
+    background-color: aqua;
+    color: #333;
+    line-height: 1.6;
+}
+
+section{
+    padding: 60px 10%;
+    text-align: center;
+}
+
+h1,h2,h3{
+    color: black;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color:pink;
+    color: black;
+    border: orangered;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+header{
+    background: black;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#home{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#home img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#about{
+    background-color: #0dcdfd;
+    padding: 60px 10%;
+}
+
+#Projects{
+    background-color: #1195c9;
+}
+
+
+.project:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.hidden{
+    display: none;
+}
+
+#contact{
+    background-color: #0dcdfd;
+    padding: 60px 10%;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+}
+footer{
+    background: aquamarine;
+    color: black;
+    text-align: center;
+    padding: 15px ;
+    margin-top: 20px;
+}
+footer a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+@media(max-width:768px){
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+    section{
+        padding: 40px 5%;
+    }
+    #home img{
+        width: 150px;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: thistle; 
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin: 0 10px;
+}
+nav a{
+    color: azure;
+    text-decoration: none;
+}
+#menuToggle{
+    display:none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+@media screen and(max-width:768px){
+    #mediaToggle{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    nav ul.active{
+        display: flex;
+    }
+}
+#mini-game{
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+}
+#userGuess{
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
